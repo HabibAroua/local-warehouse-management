@@ -113,7 +113,32 @@
         
         public function getAll()
         {
-            
+            try
+            {
+                global $connection;
+                $T = array();
+                $res = $connection->con->query("SELECT * from Admin");
+                $i = 0;
+                while($tab=$res->fetch(PDO::FETCH_NUM))
+                {
+                    $T[$i] = $Array = array
+                    (
+                        'login'=> $tab[0],
+                        'first_name' => $tab[1],
+                        'last_name' => $tab[2],
+                        'email'=> $tab[3],
+                        'address'=> $tab[4],
+                        'password' => $tab[5]
+                    );
+                    $i++;
+                }
+                return $T;
+            }
+            catch(Exception $e)
+            {
+                echo "Error : ".$e;
+                return false;
+            }
         }
         
         public function update()
