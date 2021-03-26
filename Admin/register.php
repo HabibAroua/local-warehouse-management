@@ -203,7 +203,7 @@
 			);
 		}
 	);
-  </script>
+	</script>
   <!-- endinject -->
 </body>
 

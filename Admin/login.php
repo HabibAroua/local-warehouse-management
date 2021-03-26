@@ -17,6 +17,10 @@
   <link rel="stylesheet" href="css/style.css">
   <!-- endinject -->
   <link rel="shortcut icon" href="images/favicon.png" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/AlertifyJS/1.13.1/css/alertify.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/AlertifyJS/1.13.1/alertify.js"></script>
+
 </head>
 
 <body>
@@ -31,15 +35,15 @@
               </div>
               <h4>Hello! let's get started</h4>
               <h6 class="font-weight-light">Sign in to continue.</h6>
-              <form class="pt-3">
+              <form class="pt-3" method="POST" action="../app/action/Admin/auth.php">
                 <div class="form-group">
-                  <input type="email" class="form-control form-control-lg" id="exampleInputEmail1" placeholder="Username">
+                  <input type="login" class="form-control form-control-lg" name="login" id="login" placeholder="login">
                 </div>
                 <div class="form-group">
-                  <input type="password" class="form-control form-control-lg" id="exampleInputPassword1" placeholder="Password">
+                  <input type="password" class="form-control form-control-lg" name="password" id="password" placeholder="Password">
                 </div>
                 <div class="mt-3">
-                  <a class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn" href="../../index.html">SIGN IN</a>
+                  <input type="submit" id="btLogin" value="SIGN IN" class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn" />
                 </div>
                 <div class="my-2 d-flex justify-content-between align-items-center">
                   <div class="form-check">
@@ -76,6 +80,22 @@
   <script src="js/hoverable-collapse.js"></script>
   <script src="js/template.js"></script>
   <script src="js/todolist.js"></script>
+  <script>
+    $(document).ready
+    (
+    	function()
+    	{
+    		$("#btLogin").click
+    		(
+    			function(e)
+    			{
+            alert('Hello');
+            e.preventDefault();
+          }
+        );
+      }
+    );
+  </script>
   <!-- endinject -->
 </body>
 

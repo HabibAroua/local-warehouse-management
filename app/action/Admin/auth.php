@@ -25,7 +25,9 @@
         }
         if($test == true)
         {
-            echo "Good";
+            $session = new Session();
+            $session->connect($admin->getLogin(),$admin->getPassword(),'../../../Admin/index.php',3600);
+
         }
         else
         {
