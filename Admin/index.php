@@ -1,3 +1,8 @@
+<?php
+  require_once('../app/session/session.php');
+  $s = new Session();
+  $s->afterConnection();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -143,7 +148,7 @@
                 <i class="ti-settings text-primary"></i>
                 Settings
               </a>
-              <a class="dropdown-item">
+              <a class="dropdown-item" href="logout.php">
                 <i class="ti-power-off text-primary"></i>
                 Logout
               </a>

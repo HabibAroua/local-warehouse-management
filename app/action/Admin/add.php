@@ -1,6 +1,7 @@
 <?php
     require_once('../../connection/Connection.php');
     require_once('../../model/Admin.php');
+    require_once('../../session/session.php');
     // NB: toujours on doit declarer Connection.php et Admin.php
     
     if((isset($_POST['login'])) && (isset($_POST['first_name'])) &&
@@ -17,6 +18,8 @@
         if($admin->add() == 1)
         {
             echo "good";
+            $session = new Session();
+            $session->connect($admin->getLogin(),$admin->getPassword(),'../../../Admin/index.php',3600);
         }
         else
         {
