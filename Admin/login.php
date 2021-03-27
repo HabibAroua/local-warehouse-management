@@ -89,8 +89,23 @@
     		(
     			function(e)
     			{
-            alert('Hello');
-            e.preventDefault();
+            var login = $('#login').val();
+            var password = $('#password').val();
+            if(login === "")
+            {
+              $("#login").focus();
+              alertify.error('You Should enter your Login');
+              e.preventDefault();
+            }
+            else
+            {
+              if(password === "")
+              {
+                $("#password").focus();
+                alertify.error('You Should enter your password');
+                e.preventDefault();  
+              }
+            }
           }
         );
       }

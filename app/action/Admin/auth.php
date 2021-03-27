@@ -13,12 +13,14 @@
             {
                 if(sha1($_POST['password']) == $v{'password'})
                 {
+                    $admin->setLogin($_POST['login']);
+                    $admin->setPassword($_POST['password']);
                     $test = true;
                     break;
                 }
                 else
                 {
-                    echo "Verif your password ";
+                    echo "Verif your password <br>";
                     break;
                 }
             }
