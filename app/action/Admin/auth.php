@@ -33,7 +33,7 @@
         }
         else
         {
-            echo "Bad";
+            echo "Your login or password are incorrect";
         }
     }
     else
