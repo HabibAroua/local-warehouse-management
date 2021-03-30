@@ -14,8 +14,8 @@
             </a>
             <div class="collapse" id="auth">
                 <ul class="nav flex-column sub-menu">
-                    <li class="nav-item"> <a class="nav-link" href="Profile.php"> Update your informations </a></li>
-                    <li class="nav-item"> <a class="nav-link" href="Profile.php"> Update your password </a></li>
+                    <li class="nav-item"> <a class="nav-link" href="updateProfile.php?page=updateInfo"> Update your informations </a></li>
+                    <li class="nav-item"> <a class="nav-link" href="updateProfile.php?page=updatePassword"> Update your password </a></li>
                 </ul>
             </div>
         </li>
