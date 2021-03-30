@@ -1,6 +1,12 @@
 <nav class="sidebar sidebar-offcanvas" id="sidebar">
     <ul class="nav">
         <li class="nav-item">
+            <a class="nav-link" href="index.php">
+                <i class="ti-shield menu-icon"></i>
+                <span class="menu-title">Dashboard</span>
+            </a>
+        </li>
+        <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
                 <i class="ti-user menu-icon"></i>
                 <span class="menu-title">User Profil</span>
@@ -12,12 +18,6 @@
                     <li class="nav-item"> <a class="nav-link" href="Profile.php"> Update your password </a></li>
                 </ul>
             </div>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="index.php">
-                <i class="ti-shield menu-icon"></i>
-                <span class="menu-title">Dashboard</span>
-            </a>
         </li>
         <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">

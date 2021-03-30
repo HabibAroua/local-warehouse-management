@@ -141,9 +141,58 @@
             }
         }
         
-        public function update()
+        public function update($login)
         {
-            
+            try
+            {
+                global $connection;
+                $data =
+                [
+                    'login' => $this->login,
+                    'first_name' => $this->first_name,
+                    'last_name' => $this->last_name,
+                    'email' => $this->email,
+                    'address' => $this->address,
+                    'old_login' => $login,
+                ];
+                $sql = "UPDATE Admin SET 
+                        login=:login,
+                        first_name=:first_name,
+                        last_name=:last_name,
+                        email=:email,
+                        address=:address 
+                        WHERE login=:old_login";
+                $stmt= $connection->con->prepare($sql);
+                return $stmt->execute($data);
+            }
+            catch(Exception $e)
+            {
+                echo "Error : ".$e;
+                return 0;
+            }
+        }
+        
+        public function updatePassword($login)
+        {
+            try
+            {
+                global $connection;
+                $data =
+                [
+                    'password' => $this->password,
+                    'old_login' => $login,
+                ];
+                $sql = "UPDATE Admin SET 
+                        password=:password
+                        WHERE login=:old_login";
+                $stmt= $connection->con->prepare($sql);
+                return $stmt->execute($data);
+            }
+            catch(Exception $e)
+            {
+                echo "Error : ".$e;
+                return 0;
+            }
         }
     }
 ?>
