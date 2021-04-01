@@ -180,11 +180,11 @@
                 $data =
                 [
                     'password' => $this->password,
-                    'old_login' => $login,
+                    'login' => $login,
                 ];
                 $sql = "UPDATE Admin SET 
                         password=:password
-                        WHERE login=:old_login";
+                        WHERE login=:login";
                 $stmt= $connection->con->prepare($sql);
                 return $stmt->execute($data);
             }
@@ -194,6 +194,5 @@
                 return 0;
             }
         }
-        
     }
 ?>
