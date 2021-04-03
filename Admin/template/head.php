@@ -1,3 +1,12 @@
+<?php
+    //connection class
+    require_once('../app/connection/Connection.php');
+    //all models (classes)
+    require_once('../app/model/Admin.php');
+    require_once('../app/model/Category.php');
+    require_once('../app/model/Provider.php');
+    require_once('../app/model/Provider.php');
+?>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">

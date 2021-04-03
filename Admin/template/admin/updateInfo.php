@@ -1,7 +1,4 @@
 <?php
-
-    require_once('../app/connection/Connection.php');
-    require_once('../app/model/Admin.php');
     require_once('../app/action/Admin/getInfoAdmin.php');
 ?>
 <div class="content-wrapper">

@@ -23,19 +23,19 @@
             {
                 if($_GET['page'] == "updateInfo")
                 {
-                    require_once('template/updateInfo.php');
+                    require_once('template/admin/updateInfo.php');
                 }
                 else
                 {
-                    if($_GET['page'] == "updatePassword")
-                    {
-                        require_once('template/updatePassword.php');
-                    }
+                  if($_GET['page'] == "updatePassword")
+                  {
+                    require_once('template/admin/updatePassword.php');
+                  }
                 }
             }
             else
             {
-                require_once('template/updateInfo.php');
+              require_once('template/updateInfo.php');
             }
           ?>
           <?php
