@@ -27,8 +27,8 @@
             </a>
             <div class="collapse" id="ui-basic">
                 <ul class="nav flex-column sub-menu">
-                    <li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.html">Add new Provider</a></li>
-                    <li class="nav-item"> <a class="nav-link" href="pages/ui-features/typography.html">List of Providers</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="Provider_Management.php?page=add">Add new Provider</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="Provider_Management.php?page=list">List of Providers</a></li>
                 </ul>
             </div>
         </li>
