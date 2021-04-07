@@ -6,42 +6,21 @@
                     <div class="card-body">
                         <div class="card-body">
                             <h4 class="card-title">Add new Provider</h4>
-                            <form method="POST" action="">
+                            <form method="POST" action="gg">
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group row">
-                                            <label class="col-sm-3 col-form-label">First Name</label>
+                                            <label for="first_name" class="col-sm-3 col-form-label">First Name</label>
                                             <div class="col-sm-9">
-                                                <input type="text" class="form-control" />
+                                                <input type="text" class="form-control" name="first_name" id="first_name" />
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group row">
-                                            <label class="col-sm-3 col-form-label">Last Name</label>
+                                            <label for="last_name" class="col-sm-3 col-form-label">Last Name</label>
                                             <div class="col-sm-9">
-                                                <input type="text" class="form-control" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group row">
-                                            <label class="col-sm-3 col-form-label">Gender</label>
-                                            <div class="col-sm-9">
-                                                <select class="form-control">
-                                                    <option>Male</option>
-                                                    <option>Female</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group row">
-                                            <label class="col-sm-3 col-form-label">Date of Birth</label>
-                                            <div class="col-sm-9">
-                                                <input class="form-control" placeholder="dd/mm/yyyy"/>
+                                                <input type="text" class="form-control" name="last_name" id="last_name" />
                                             </div>
                                         </div>
                                     </div>
@@ -49,54 +28,17 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group row">
-                                            <label class="col-sm-3 col-form-label">Category</label>
+                                            <label for="email" class="col-sm-3 col-form-label">Email</label>
                                             <div class="col-sm-9">
-                                                <select class="form-control">
-                                                    <option>Category1</option>
-                                                    <option>Category2</option>
-                                                    <option>Category3</option>
-                                                    <option>Category4</option>
-                                                </select>
+                                                <input type="email" class="form-control" name="email" id="email" />
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group row">
-                                            <label class="col-sm-3 col-form-label">Membership</label>
-                                            <div class="col-sm-4">
-                                                <div class="form-check">
-                                                    <label class="form-check-label">
-                                                        <input type="radio" class="form-check-input" name="membershipRadios" id="membershipRadios1" value="" checked>Free
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-5">
-                                                <div class="form-check">
-                                                    <label class="form-check-label">
-                                                        <input type="radio" class="form-check-input" name="membershipRadios" id="membershipRadios2" value="option2">Professional
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p class="card-description">
-                                    Address
-                                </p>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group row">
-                                            <label class="col-sm-3 col-form-label">Address 1</label>
+                                            <label for="telephone" class="col-sm-3 col-form-label">Telephone</label>
                                             <div class="col-sm-9">
-                                                <input type="text" class="form-control" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group row">
-                                            <label class="col-sm-3 col-form-label">State</label>
-                                            <div class="col-sm-9">
-                                                <input type="text" class="form-control" />
+                                                <input type="text" name="telephone" id="telephone" class="form-control" />
                                             </div>
                                         </div>
                                     </div>
@@ -104,40 +46,21 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group row">
-                                            <label class="col-sm-3 col-form-label">Address 2</label>
-                                        <div class="col-sm-9">
-                                      <input type="text" class="form-control" />
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group row">
-                                        <label class="col-sm-3 col-form-label">Postcode</label>
-                                        <div class="col-sm-9">
-                                            <input type="text" class="form-control" />
+                                            <label for="address" class="col-sm-3 col-form-label">Address</label>
+                                            <div class="col-sm-9">
+                                                <input type="text" id="address" name="address" class="form-control" />
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group row">
-                                            <label class="col-sm-3 col-form-label">City</label>
                                             <div class="col-sm-9">
-                                                <input type="text" class="form-control" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group row">
-                                            <label class="col-sm-3 col-form-label">Country</label>
-                                            <div class="col-sm-9">
-                                                <select class="form-control">
-                                                    <option>America</option>
-                                                    <option>Italy</option>
-                                                    <option>Russia</option>
-                                                    <option>Britain</option>
-                                                </select>
+                                                <button type="submit" id="btAddProvider" class="btn btn-primary btn-icon-text">
+                                                    <i class="ti-file btn-icon-prepend"></i>
+                                                    Submit
+                                                </button>
                                             </div>
                                         </div>
                                     </div>
@@ -150,3 +73,79 @@
         </div>
     </div>
 </div>
+<script>
+    function IsEmail(email)
+    {
+    	var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return re.test(String(email).toLowerCase());
+    }
+        
+    $(document).ready
+	(
+		function()
+		{
+			$("#btAddProvider").click
+			(
+				function(e)
+				{
+                    var first_name = $('#first_name').val();
+                    var last_name = $('#last_name').val();
+                    var email = $('#email').val();
+                    var telephone = $('#telephone').val();
+                    var address = $('#address').val();
+                    if(first_name === "")
+                    {
+                        $("#first_name").focus();
+                        alertify.error('You Should enter the first name of the provider');
+                        e.preventDefault();    
+                    }
+                    else
+                    {
+                        if(last_name === "")
+                        {
+                            $("#last_name").focus();
+                            alertify.error('You Should enter the last name of the provider');
+                            e.preventDefault();
+                        }
+                        else
+                        {
+                            if(email === "")
+                            {
+                                $("#email").focus();
+                                alertify.error('You Should enter the email of the provider');
+                                e.preventDefault();
+                            }
+                            else
+                            {
+                                if(telephone === "")
+                                {
+                                    $("#telephone").focus();
+                                    alertify.error('You Should enter the telephone of the provider');
+                                    e.preventDefault();
+                                }
+                                else
+                                {
+                                    if(address === "")
+                                    {
+                                        $("#address").focus();
+                                        alertify.error('You Should enter the address of the provider');
+                                        e.preventDefault();
+                                    }
+                                    else
+                                    {
+                                        if(IsEmail(email) === false)
+                                        {
+                                            $("#email").focus();
+                                            alertify.error('You Should enter an email format');
+                                            e.preventDefault();
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            );
+        }
+    );
+</script>e
