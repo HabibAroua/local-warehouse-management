@@ -1,6 +1,6 @@
 <?php
 
-    class fournisseur
+    class Provider
     {
         //declarer les attributs
         private $id;
