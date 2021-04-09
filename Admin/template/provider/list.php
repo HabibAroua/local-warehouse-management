@@ -116,6 +116,7 @@
     
     function update(id)
     {
-        
+        location.href = "Provider_Management.php?page=update&id="+id;
+        //Provider_Management.php?page=update&id=id
     }
 </script>
