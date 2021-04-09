@@ -104,22 +104,60 @@
         
         public function add()
         {
-            
+            try
+            {
+                return 1;
+            }
+            catch(Exception $e)
+            {
+                echo "Error : ".$e;
+                return 0;
+            }
         }
         
         public function delete()
         {
-            
+            try
+            {
+                return 1;
+            }
+            catch(Exception $e)
+            {
+                echo "Error : ".$e;
+                return 0;
+            }
         }
         
         public function getAll()
         {
-            
+            try
+            {
+                $T = array();
+                return $T;
+            }
+            catch(Exception $e)
+            {
+                echo "Error : ".$e;
+                return null;
+            }
         }
         
         public function update()
         {
-            
+            try
+            {
+                return 1;
+            }
+            catch(Exception $e)
+            {
+                echo "Error : ".$e;
+                return 0;
+            }
+        }
+        
+        public function toString()
+        {
+            return "";
         }
     }
 ?>

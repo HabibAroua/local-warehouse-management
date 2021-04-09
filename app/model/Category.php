@@ -109,7 +109,7 @@
             }
             catch (Exception $e)
             {
-                echo "Erreur ".$e;
+                echo "Error : ".$e;
                 return (null);
             } 
         }
@@ -133,7 +133,7 @@
             }
             catch(Exception $e)
             {
-                echo "Error ".$e;
+                echo "Error : ".$e;
                 return 0;
             }
         }
