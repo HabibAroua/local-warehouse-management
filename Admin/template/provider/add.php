@@ -5,7 +5,7 @@
                 <div class="card">
                     <div class="card-body">
                         <div class="card-body">
-                            <h4 class="card-title">Add new Provider</h4>
+                            <h4 class="card-title">Add new provider</h4>
                             <form method="POST" action="../app/action/Provider/add.php">
                                 <div class="row">
                                     <div class="col-md-6">
