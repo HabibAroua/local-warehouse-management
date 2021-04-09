@@ -3,6 +3,5 @@
     if($_GET['id'])
     {
         $provider = $provider ->findProviderById($_GET['id']);
-        echo $provider->toString();
     }
 ?>

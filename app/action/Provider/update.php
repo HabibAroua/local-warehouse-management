@@ -1,6 +1,6 @@
 <?php
     require_once('../../connection/Connection.php');
-    require_once('../../model/Admin.php');
+    require_once('../../model/Provider.php');
     
     if((isset($_POST['id'])) && (isset($_POST['first_name'])) && (isset($_POST['last_name']))
        && (isset($_POST['email'])) && (isset($_POST['address'])) && (isset($_POST['telephone'])))
