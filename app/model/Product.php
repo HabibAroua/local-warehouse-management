@@ -155,9 +155,10 @@
             }
         }
         
+        //toString() method
         public function toString()
         {
-            return "";
+            return "[]";
         }
     }
 ?>
