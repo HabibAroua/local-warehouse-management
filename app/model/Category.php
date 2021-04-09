@@ -46,31 +46,47 @@
         
         public function add()
         {
-            global $connection;
-            $data =
-            [
-               'label' => $this->label,
-               'description' => $this->description,
-            ];
-            $sql="insert into Category values(null,:label,:description)";
-            //prepare la requette sql 
-            $stmt=$connection->con->prepare($sql);
-            //executer la requette en utilisant les parametre de la variable $data
-            return $stmt ->execute($data);  
+            try
+            {
+                global $connection;
+                $data =
+                [
+                   'label' => $this->label,
+                   'description' => $this->description,
+                ];
+                $sql="insert into Category values(null,:label,:description)";
+                //prepare la requette sql 
+                $stmt=$connection->con->prepare($sql);
+                //executer la requette en utilisant les parametre de la variable $data
+                return $stmt ->execute($data);
+            }
+            catch(Exception $e)
+            {
+                echo "Error : ".$e;
+                return 0;
+            }
         }
          
         public function delete($id)
         {
-            global $connection;
-            $data =
-            [
-                'id'=>$id,//valeur=$id , param='id'
-            ];
-            $sql="delete from Category where id=:id";
-            //prepare la requette sql 
-            $stmt=$connection->con->prepare($sql);
-            //executer la requette en utilisant les parametre de la variable $data
-            return $stmt ->execute($data);
+            try
+            {
+                global $connection;
+                $data =
+                [
+                    'id'=>$id,//valeur=$id , param='id'
+                ];
+                $sql="delete from Category where id=:id";
+                //prepare la requette sql 
+                $stmt=$connection->con->prepare($sql);
+                //executer la requette en utilisant les parametre de la variable $data
+                return $stmt ->execute($data);
+            }
+            catch(Exception $e)
+            {
+                echo "Error : ".$e;
+                return 0;
+            }
         }
          
         public function getAll()
@@ -100,18 +116,26 @@
          
         public function update($id)
         {
-            global $connection;
-            $data =
-            [
-                'id'=>$id,//valeur=$id , param='id'
-                'label'=>$this->label,
-                'description'=>$this->description,
-            ];
-            $sql="update Category set label=:label , description=:description where id=:id";
-            //prepare la requette sql 
-            $stmt=$connection->con->prepare($sql);
-            //executer la requette en utilisant les parametre de la variable $data
-            return $stmt ->execute($data); 
+            try
+            {
+                global $connection;
+                $data =
+                [
+                    'id'=>$id,//valeur=$id , param='id'
+                    'label'=>$this->label,
+                    'description'=>$this->description,
+                ];
+                $sql="update Category set label=:label , description=:description where id=:id";
+                //prepare la requette sql 
+                $stmt=$connection->con->prepare($sql);
+                //executer la requette en utilisant les parametre de la variable $data
+                return $stmt ->execute($data);
+            }
+            catch(Exception $e)
+            {
+                echo "Error ".$e;
+                return 0;
+            }
         }
     }
  ?>
