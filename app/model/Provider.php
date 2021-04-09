@@ -184,5 +184,37 @@
                 return 0;
             }
         }
+        
+        public function findProviderById($id)
+        {
+            $p =new Provider();
+            foreach($this->getAll() as $v)
+            {
+                if($v{'id'} == $id)
+                {
+                    $p->setId($id);
+                    $p->setFirst_name($v{'first_name'});
+                    $p->setLast_name($v{'last_name'});
+                    $p->setEmail($v{'email'});
+                    $p->setAddress($v{'address'});
+                    $p->setTelephone($v{'telephone'});
+                    break;
+                }
+
+            }
+            return $p;
+        }
+        
+        public function toString()
+        {
+            return "[
+                        id : ".$this->id.", \n".
+                        "first_name : ".$this->first_name.", \n".
+                        "last_name : ".$this->last_name.", \n".
+                        "Email : ".$this->email.", \n".
+                        "Address : ".$this->address.", \n".
+                        "Telephone : ".$this->telephone."
+                    ]";
+        }
     }
 ?>

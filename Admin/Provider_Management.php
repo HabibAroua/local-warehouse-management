@@ -21,17 +21,15 @@
           <?php
             if(isset($_GET['page']))
             {
-                if($_GET['page'] == "add")
-                {
-                    require_once('template/provider/add.php');   
-                }
-                else
-                {
-                    if($_GET['page'] == "list")
-                    {
-                        require_once('template/provider/list.php');
-                    }
-                }
+              switch($_GET['page'])
+              {
+                case 'add' : require_once('template/provider/add.php');
+                break;
+                case 'list' : require_once('template/provider/list.php');
+                break;
+                case 'update' : require_once('template/provider/update.php');
+                break;
+              }
             }
           ?>
           <?php

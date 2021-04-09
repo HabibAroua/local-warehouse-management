@@ -12,7 +12,7 @@
                     <div class="card-body">
                         <h4 class="card-title">List of all Provider</h4>
                         <input type="text" id="myInput" onkeyup="myFunction();" placeholder="Search a provider.." />
-                        <table class="table table-hover" id="myTable">
+                        <table class="table table-hover" id="example">
                             <thead>
                                 <tr>
                                     <th>First name</th>
@@ -62,7 +62,7 @@
         var input, filter, table, tr, td, i, txtValue;
         input = document.getElementById("myInput");
         filter = input.value.toUpperCase();
-        table = document.getElementById("myTable");
+        table = document.getElementById("example");
         tr = table.getElementsByTagName("tr");
         for (i = 0; i < tr.length; i++)
         {
@@ -118,6 +118,4 @@
     {
         
     }
-    
-
 </script>
