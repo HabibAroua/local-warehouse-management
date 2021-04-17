@@ -106,7 +106,7 @@
         {
             try
             {
-                
+                return 1;
             }
             catch(Exception $e)
             {
