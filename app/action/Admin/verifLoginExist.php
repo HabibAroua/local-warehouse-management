@@ -1,15 +1,15 @@
 <?php
-
+    
     require_once('../../connection/Connection.php');
     require_once('../../model/Admin.php');
     
-    if(isset($_POST['email']))
+    if(isset($_POST['login']))
     {
-        $admin = new Admin();
         $test = false;
+        $admin = new Admin();
         foreach($admin->getAll() as $v)
         {
-            if($v{'email'} == strtolower($_POST['email']))
+            if($v{'login'} == $_POST['login'])
             {
                 $test = true;
                 break;
@@ -17,11 +17,11 @@
         }
         if($test == true)
         {
-            echo 1; // 1 if this email is exist
+            echo 1; // if the login is exist
         }
         else
         {
-            echo 0; // 0 if this email is not exist
+            echo 0; // if the login is not exist
         }
     }
     else
