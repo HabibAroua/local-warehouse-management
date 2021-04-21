@@ -1,4 +1,4 @@
-<?php
+ <?php
 
     class Category
     {
@@ -101,11 +101,13 @@
                 {
                     $T[$i]=$Array=array
                     (
-                        'id'=>$this->id,
-                        'label'=>$this->label,
-                        'description'=>$this->description 
+                        'id'=>$tab[0],
+                        'label'=>$tab[1],
+                        'description'=>$tab[2]
                     );
+                    $i++;
                 }
+                return($T);
             }
             catch (Exception $e)
             {
@@ -137,5 +139,29 @@
                 return 0;
             }
         }
+        
+        public function findCathegoryById($id)
+        {
+            try
+            {
+                $c = new Category();
+                foreach ($this->getAll() as $v)
+                {
+                    if ($id==$v{'id'})
+                    {
+                        $c->setId($v{'id'});
+                        $c->setLabel($v{'label'});
+                        $c->setDescription($v{'description'});
+                    }
+                }
+                return ($c);
+            }
+            catch(Exception $e)
+            {
+                echo "Error : ".$e;
+                return null;
+            }
+        }
+        
     }
- ?>
+?>
