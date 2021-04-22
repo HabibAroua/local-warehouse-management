@@ -152,6 +152,7 @@
                         $c->setId($v{'id'});
                         $c->setLabel($v{'label'});
                         $c->setDescription($v{'description'});
+                        break;
                     }
                 }
                 return ($c);
