@@ -11,6 +11,7 @@
         private $photo;
         private $idCat;
         private $idProvider;
+        private $login;
 
         //id
         public function getId()

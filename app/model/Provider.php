@@ -205,6 +205,16 @@
             return $p;
         }
         
+        public function nbProvider()
+        {
+            $nb=0;
+            foreach ($this->getAll() as $v)
+            {
+                $nb++;
+            }
+            return $nb;
+        }
+        
         public function toString()
         {
             return "[
