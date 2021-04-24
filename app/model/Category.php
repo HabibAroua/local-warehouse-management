@@ -166,12 +166,21 @@
       
       public function nbCategory()
       {
-         $nb=0;
-         foreach ($this->getAll() as $v)
-         {
+        try
+        {
+          $nb=0;
+          foreach ($this->getAll() as $v)
+          {
             $nb++;
-         }
-         return $nb;
+          }
+          return $nb;
+        }
+        catch(Exception $e)
+        {
+          echo "Error ".$e;
+          return 0;
+        }
+        
       }
         
    }
