@@ -35,6 +35,17 @@
             $this->label = $label;
         }
         
+        //login
+        public function getLogin()
+        {
+            return $this->login;
+        }
+        
+        public function setLogin($login)
+        {
+            $this->login = $login;
+        }
+        
         //description
         public function getDescription()
         {
@@ -176,6 +187,7 @@
                          'login' => $tab[7],
                         'idProvider' =>$tab[8]
                     );
+                    $i++;
                 }
                 return $T;
             }
