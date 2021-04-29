@@ -59,3 +59,6 @@ CREATE TABLE Client
 
 ALTER TABLE Product
 MODIFY photo text;
+
+ALTER TABLE Product
+MODIFY photo longtext;

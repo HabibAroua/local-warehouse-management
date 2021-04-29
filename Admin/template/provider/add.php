@@ -10,17 +10,17 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group row">
-                                            <label for="label" class="col-sm-3 col-form-label">Label</label>
+                                            <label for="first_name" class="col-sm-3 col-form-label">First Name</label>
                                             <div class="col-sm-9">
-                                                <input type="text" class="form-control" name="label" id="label" />
+                                                <input type="text" class="form-control" name="first_name" id="first_name" />
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group row">
-                                            <label for="number" class="col-sm-3 col-form-label">Number</label>
+                                            <label for="last_name" class="col-sm-3 col-form-label">Last Name</label>
                                             <div class="col-sm-9">
-                                                <input type="number" class="form-control" name="number" id="number" />
+                                                <input type="text" class="form-control" name="last_name" id="last_name" />
                                             </div>
                                         </div>
                                     </div>
