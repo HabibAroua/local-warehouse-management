@@ -90,7 +90,7 @@ footer .cizgi { border-right: 1px solid #535e67; }
 						<div class="card bg-secondary border-0">
 							<div class="card-body text-light text-center">
 								<h5 class="card-title text-white display-4" style="font-size:30px">Telif Hakkı</h5>
-							<p class="d-inline lead">Tüm Hakları Saklıdır © 2018<br>
+							<p class="d-inline lead">Tüm Hakları Saklıdır © 2021<br>
 							<a href="#" class="text-light d-block lead">Blog</a>
 							</p>
 	
@@ -111,7 +111,7 @@ footer .cizgi { border-right: 1px solid #535e67; }
 					<div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
 						<div class="card bg-secondary border-0">
 							<div class="card-body text-center">
-							<h5 class="card-title text-white display-4" style="font-size:30px">Sosyal Medya</h5>
+							<h5 class="card-title text-white display-4" style="font-size:30px">Social Media</h5>
 					
 									<a class="text-light" href="#"><i class="fa fa-facebook-square fa-fw fa-2x"></i></a>
 								
