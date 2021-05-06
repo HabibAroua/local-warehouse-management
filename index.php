@@ -27,13 +27,15 @@
 				font-size: 0.9rem;
 			}
 			
-			.social-link:hover, .social-link:focus {
+			.social-link:hover, .social-link:focus
+			{
 				background: #ddd;
 				text-decoration: none;
 				color: #555;
 			}
 			
-			.progress {
+			.progress
+			{
 				height: 10px;
 			}
 		</style>
