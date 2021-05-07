@@ -5,7 +5,7 @@
     if(isset($_POST['id']))
     {
         $product= new Product();
-        if($product>delete($_POST['id']) == 1)
+        if($product->delete($_POST['id']) == 1)
         {
             echo "Delating of new product successfully has been completed";
         }
