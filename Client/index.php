@@ -3,3 +3,12 @@
   $s = new SessionClient();
   $s->afterConnection();
 ?>
+<!DOCTYPE html>
+<html>
+  <head>
+    
+  </head>
+  <body>
+    
+  </body>
+</html>
