@@ -12,14 +12,13 @@
     }
     
     if( ( isset($_POST['id']) ) && ( isset($_POST['label']) ) && ( isset($_POST['description']) ) && ( isset($_POST['number']) ) && ( isset($_POST['price']) )
-        && ( isset($_FILES['photo']) ) &&( isset($_POST['idCat']) ) && ( isset($_POST['idProvider']) ) && ( isset($_POST['login']) ))
+        &&( isset($_POST['idCat']) ) && ( isset($_POST['idProvider']) ) && ( isset($_POST['login']) ))
     {
         $product= new Product();
         $product->setLabel($_POST['label']);
         $product->setDescription($_POST['description']);
         $product->setNumber($_POST['number']);
         $product->setPrice($_POST['price']);
-        $product->setPhoto(convert_to_base64($_FILES['photo']));
         $product->setIdCat($_POST['idCat']);
         $product->setidProvider($_POST['idProvider']);
         $product->setlogin($_POST['login']);

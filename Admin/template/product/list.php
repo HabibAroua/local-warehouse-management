@@ -19,7 +19,6 @@
                                     <th> Label </th>
                                     <th>Number </th>
                                     <th>Price </th>
-                                    <th> Description </th>
                                     <th> Photo </th>
                                     <th>Category</th>
                                     <th> add By </th>
@@ -37,7 +36,6 @@
                                         $Label= $v{'label'};
                                         $number= $v{'number'};
                                         $price= $v{'price'};
-                                        $Description = $v{'description'};
                                         $photo= $v{'photo'};
                                         $idCat= $v{'idCat'};
                                         $login= $v{'login'};
@@ -46,7 +44,6 @@
                                             echo "<td> $Label </td> ";
                                             echo "<td>  $number </td> ";
                                             echo "<td> $price </td> ";
-                                            echo "<td> $Description </td> ";
                                             echo "<td><img style='width:100px; height:80px;' src='$photo'  /></td> ";
                                             echo "<td>$idCat </td> ";
                                             echo "<td> $login </td> ";

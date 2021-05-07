@@ -179,9 +179,9 @@
                     (
                         'id'=>$tab[0],
                         'label'=>$tab[1],
-                        'description'=>$tab[2] ,
-                        'number' => $tab[3],
-                        'price' => $tab[4],
+                        'number'=>$tab[2] ,
+                        'price' => $tab[3],
+                        'description' => $tab[4],
                         'photo' => $tab[5],
                         'idCat' => $tab[6],
                          'login' => $tab[7],
@@ -210,7 +210,6 @@
                     'description' => $this->description,
                     'number' => $this->number,
                     'price' => $this->price,
-                    'photo' => $this->photo,
                     'idCat' => $this->idCat,
                     'login'=>$this->login,
                     'idProvider'=>$this->idProvider,
@@ -220,7 +219,6 @@
                             description=:description,
                             number=:number,
                             price=:price,
-                            photo=:photo,
                             idCat=:idCat,
                             login=:login,
                             idProvider=:idProvider

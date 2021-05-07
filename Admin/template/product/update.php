@@ -16,7 +16,7 @@
                                         <div class="form-group row">
                                             <label for="label" class="col-sm-3 col-form-label">Label</label>
                                             <div class="col-sm-9">
-                                                <input type="text" class="form-control" name="label" id="label" />
+                                                <input type="text" value="<?php echo $product->getLabel(); ?>" class="form-control" name="label" id="label" />
                                             </div>
                                         </div>
                                     </div>
@@ -24,7 +24,7 @@
                                         <div class="form-group row">
                                             <label for="number" class="col-sm-3 col-form-label">Number</label>
                                             <div class="col-sm-9">
-                                                <input type="number" class="form-control" name="number" id="number" />
+                                                <input type="number" value="<?php echo $product->getNumber(); ?>" class="form-control" name="number" id="number" />
                                             </div>
                                         </div>
                                     </div>
@@ -34,7 +34,7 @@
                                         <div class="form-group row">
                                             <label for="price" class="col-sm-3 col-form-label">Price</label>
                                             <div class="col-sm-9">
-                                                <input type="number" class="form-control" name="price" id="price" />
+                                                <input type="number" value="<?php echo $product->getPrice(); ?>" class="form-control" name="price" id="price" />
                                             </div>
                                         </div>
                                     </div>
@@ -43,8 +43,12 @@
                                             <label for="provider" class="col-sm-3 col-form-label">Provider</label>
                                             <div class="col-sm-9">
                                                 <select class="form-control" name="idProvider" id="idProvider">
-                                                    <option>
                                                     
+                                                    <?php
+                                                        $id_p = $product->getIdProvider();
+                                                    ?>
+                                                    <option value="<?php echo $id_p; ?>">
+                                                        <?php echo $id_p; ?>
                                                     </option>
                                                     <?php
                                                         require_once("../app/action/Provider/getAll.php");
@@ -65,7 +69,7 @@
                                         <div class="form-group row">
                                             <label for="description" class="col-sm-3 col-form-label">Description</label>
                                             <div class="col-sm-9">
-                                                <textarea class="form-control" id="description" name="description" > </textarea>
+                                                <textarea class="form-control" id="description" name="description" ><?php echo $product->getDescription(); ?> </textarea>
                                             </div>
                                         </div>
                                     </div>
