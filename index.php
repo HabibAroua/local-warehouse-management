@@ -68,6 +68,16 @@
 							Contact
 						</a>
 					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="Admin/">
+							Admin area
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="Client/">
+							Client area
+						</a>
+					</li>
 				</ul>
 				<form class="form-inline">
 					<input class="form-control mr-sm-2" type="search" placeholder="Search" class="btn btn-in-light my-sm-0" type="submit" />
