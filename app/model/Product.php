@@ -255,6 +255,72 @@
             return($product);
         }
         
+        public function findProductsByProvider($idProvider)
+        {
+            try
+            {
+                global $connection ;
+                $T=array();
+                $res=$connection -> con->query("select * from Product where idProvider=$idProvider");
+                $i=0;
+                while($tab=$res -> fetch(PDO::FETCH_NUM))
+                {
+                    $T[$i]=$Array=array
+                    (
+                        'id'=>$tab[0],
+                        'label'=>$tab[1],
+                        'number'=>$tab[2] ,
+                        'price' => $tab[3],
+                        'description' => $tab[4],
+                        'photo' => $tab[5],
+                        'idCat' => $tab[6],
+                        'login' => $tab[7],
+                        'idProvider' =>$tab[8]
+                    );
+                    $i++;
+                }
+                return $T;
+            }
+            catch(Exception $e)
+            {
+                echo "Error : ".$e;
+                return null;
+            }
+        }
+        
+        public function findProductsByCategory($idCat)
+        {
+            try
+            {
+                global $connection ;
+                $T=array();
+                $res=$connection -> con->query("select * from Product where idCat=$idCat");
+                $i=0;
+                while($tab=$res -> fetch(PDO::FETCH_NUM))
+                {
+                    $T[$i]=$Array=array
+                    (
+                        'id'=>$tab[0],
+                        'label'=>$tab[1],
+                        'number'=>$tab[2] ,
+                        'price' => $tab[3],
+                        'description' => $tab[4],
+                        'photo' => $tab[5],
+                        'idCat' => $tab[6],
+                        'login' => $tab[7],
+                        'idProvider' =>$tab[8]
+                    );
+                    $i++;
+                }
+                return $T;
+            }
+            catch(Exception $e)
+            {
+                echo "Error : ".$e;
+                return null;
+            }
+        }
+    
         //toString() method
         public function toString()
         {
