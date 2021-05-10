@@ -5,7 +5,7 @@
         $About = "";
         $Services = "";
         $Contact = "";
-        $Map;
+        $Map = "";
 		
         switch($page)
         {
@@ -57,12 +57,12 @@
 							</a>
 						</li>
 						<li class='nav-item'>
-							<a class='nav-link' href='Admin/'>
+							<a class='nav-link' href='../Admin'>
 								Admin area
 							</a>
 						</li>
 						<li class='nav-item'>
-							<a class='nav-link' href='Client/'>
+							<a class='nav-link' href='../Client/'>
 								Client area
 							</a>
 						</li>
