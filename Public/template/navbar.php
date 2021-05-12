@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
 <?php
     function activePage($page)
     {
@@ -6,7 +8,14 @@
         $Services = "";
         $Contact = "";
         $Map = "";
-		
+		require_once('../app/action/Category/getAll.php');
+		$Categories = '';
+		foreach($listcat as $v)
+		{
+			$id = $v{'id'};
+			$label = $v{'label'};
+			$Categories = $Categories."<a class='dropdown-item' href='#'>$label</a>"; 
+		}
         switch($page)
         {
             case 'Home' : $Home = 'active';
@@ -41,17 +50,12 @@
 						</li>
 						<li class='nav-item dropdown'>
           <a class='nav-link dropdown-toggle' href='http://example.com' id='navbarDropdownMenuLink' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
-        Dropdown link
+        Categories
         </a>
         <div class='dropdown-menu' aria-labelledby='navbarDropdownMenuLink'>
-          <a class='dropdown-item' href='#'>Action</a>
-          <a class='dropdown-item' href='#'>Another action</a>
-          <a class='dropdown-item' href='#'>Something else here</a>
+          $Categories
         </div>
         </li>
-
-
-
 						<li class='nav-item $Services'>
 							<a class='nav-link' href='services.php'>
 								Services
@@ -82,5 +86,3 @@
 		";
     }
 ?>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="//netdna.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
