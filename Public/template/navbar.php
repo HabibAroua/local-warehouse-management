@@ -17,8 +17,6 @@
 			break;
 			case 'Contact' : $Contact = "active";
 			break;
-			case 'Map' : $Map = "active";
-			break;
 			default : $Home = 'active';
 			break;
         }
@@ -49,11 +47,6 @@
 						<li class='nav-item $Contact'>
 							<a class='nav-link' href='contact.php'>
 								Contact
-							</a>
-						</li>
-						<li class='nav-item $Map'>
-							<a class='nav-link' href='map.php'>
-								Map
 							</a>
 						</li>
 						<li class='nav-item'>
