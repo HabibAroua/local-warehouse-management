@@ -1,18 +1,3 @@
-<?php
-	session_start();
-	if (isset($_SESSION['login']))
-	{
-		header ('location: ../Admin/index.php');
-	}
-	else
-	{
-		if (isset($_SESSION['loginClient']))
-		{
-			header ('location: ../Client/index.php');
-		}
-	}
-	
-?>
 <!doctype html>
 <html>
 	<?php
@@ -156,18 +141,18 @@
 			</div>
 		  </section>
 			<!-- -->
-			<div class="card-group pagination justify-content-center">
-				<div class="card">
-					<img src="https://res.cloudinary.com/mhmd/image/upload/v1556485076/shoes-1_gthops.jpg" class="card-img-top" alt="...">
-					<div class="card-body">
-						<h5 class="card-title">Card title</h5>
-						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-						<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-					</div>
+		<div class="card-group pagination justify-content-center">
+			<div class="card">
+				<img src="https://res.cloudinary.com/mhmd/image/upload/v1556485076/shoes-1_gthops.jpg" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="card-title">Card title</h5>
+					<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+					<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
 				</div>
-				<div class="card">
-				  <img src="https://res.cloudinary.com/mhmd/image/upload/v1556485076/shoes-1_gthops.jpg" class="card-img-top" alt="...">
-				  <div class="card-body">
+			</div>
+			<div class="card">
+				<img src="https://res.cloudinary.com/mhmd/image/upload/v1556485076/shoes-1_gthops.jpg" class="card-img-top" alt="...">
+				<div class="card-body">
 					<h5 class="card-title">Card title</h5>
 					<p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
 					<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
@@ -182,7 +167,7 @@
 				  </div>
 				</div>
 			  </div>
-						  <div class="card-group">
+			<div class="card-group">
 				<div class="card">
 				  <img src="https://res.cloudinary.com/mhmd/image/upload/v1556485076/shoes-1_gthops.jpg" class="card-img-top" alt="...">
 				  <div class="card-body">

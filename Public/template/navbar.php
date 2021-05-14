@@ -8,13 +8,14 @@
         $Services = "";
         $Contact = "";
         $Map = "";
+		$Category= "";
 		require_once('../app/action/Category/getAll.php');
 		$Categories = '';
 		foreach($listcat as $v)
 		{
 			$id = $v{'id'};
 			$label = $v{'label'};
-			$Categories = $Categories."<a class='dropdown-item' href='#'>$label</a>"; 
+			$Categories = $Categories."<a class='dropdown-item' href='productByCategory.php' href='#'>$label</a>"; 
 		}
         switch($page)
         {
@@ -22,9 +23,11 @@
 			break;
 			case 'About' : $About = 'active';
 			break;
-			case 'Services' : $Services = "active";
+			case 'Services' : $Services = 'active';
 			break;
-			case 'Contact' : $Contact = "active";
+			case 'Contact' : $Contact = 'active';
+			break;
+			case 'Category' : $Category = 'active';
 			break;
 			default : $Home = 'active';
 			break;
@@ -48,14 +51,14 @@
 								About
 							</a>
 						</li>
-						<li class='nav-item dropdown'>
-          <a class='nav-link dropdown-toggle' href='http://example.com' id='navbarDropdownMenuLink' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
-        Categories
-        </a>
-        <div class='dropdown-menu' aria-labelledby='navbarDropdownMenuLink'>
-          $Categories
-        </div>
-        </li>
+						<li class='nav-item dropdown $Category'>
+							<a class='nav-link dropdown-toggle' href='http://example.com' id='navbarDropdownMenuLink' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
+								Categories
+							</a>
+							<div class='dropdown-menu' aria-labelledby='navbarDropdownMenuLink'>
+								$Categories
+							</div>
+						</li>
 						<li class='nav-item $Services'>
 							<a class='nav-link' href='services.php'>
 								Services

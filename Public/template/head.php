@@ -1,6 +1,23 @@
 <?php
+	session_start();
+	if (isset($_SESSION['login']))
+	{
+		header ('location: ../Admin/index.php');
+	}
+	else
+	{
+		if (isset($_SESSION['loginClient']))
+		{
+			header ('location: ../Client/index.php');
+		}
+	}
+?>
+
+<?php
 	require_once('../app/connection/Connection.php');
 	require_once('../app/model/Category.php');
+	require_once('../app/model/Product.php');
+	require_once('../app/model/Provider.php');
 ?>
 <head>
 	<title>E-Commerce</title>
