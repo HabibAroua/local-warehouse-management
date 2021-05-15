@@ -15,34 +15,37 @@
 				<h1 class="display-4 font-weight-bold">List product of <?php echo $cat; ?> </h1>
 			</header> <!-- pagination justify-content-center -->
 			<?php
+				function line()
+				{
+					
+				}
 				$i = 0;
 				$s = "";
 				foreach($listProduct as $v)
 				{
-
 					$label = $v{'label'};
 					$number = $v{'number'};
 					$price = $v{'price'};
 					$description = $v{'description'};
 					$photo = $v{'photo'};
-					if(($i == 0) OR ($i == 1))
+					$i++;
+					if($i % 3 != 0)
 					{
-						$s = $s.  $label.' '.$number.' '.$price.'|';
+						$s = $s. "($i=$label) ";
 					}
 					else
 					{
-						if(($i + 1) % 3 == 0)
+						if($i % 3 == 0)
 						{
-							$s = $s . $label.' '.$number.' '.$price.'|'.'<br>';
+							$s = $s. "($i=$label) <br>";
 						}
 					}
-					$i++;
-					echo $i;
 				}
-				//$result = $x1 . $x2 . $x3;
+				echo $s;
+					
 			?>
 			<?php
-				echo $s;
+				//echo $s;
 			?>
 			
     </body>
