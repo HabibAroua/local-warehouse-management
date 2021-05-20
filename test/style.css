@@ -3,16 +3,13 @@
     color: white;
     background: var(--unnamed-color-253d8a) 0% 0% no-repeat padding-box;
     background: #253D8A 0% 0% no-repeat padding-box;
-    
     width: 1366px;
     height: 60px;
 }
 
 #nav2
 {
-    top: 50px;
-    left: 0px;
-    width: 1366px;
+    //width: 1366px;
     height: 80px;
     background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
     background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -21,10 +18,10 @@
 
 #contact
 {
-    top: 10px;
-    left: 918px;
-    width: 100px;
-    height: 40px;
+    //top: 10px;
+    //left: 918px;
+    //width: 100px;
+    //height: 40px;
     border: 1px solid var(--unnamed-color-ffffff);
     border: 1px solid #FFFFFF;
     border-radius: 73px;
@@ -33,10 +30,10 @@
 
 #recrutement
 {
-    top: 10px;
-    left: 1033px;
-    width: 120px;
-    height: 40px;
+    //top: 10px;
+    //left: 1033px;
+    //width: 120px;
+    //height: 40px;
     border: 1px solid var(--unnamed-color-ffffff);
     border: 1px solid #FFFFFF;
     border-radius: 73px;
@@ -49,47 +46,18 @@
     height: 30px;
 }
 
-.search
+#search
 {
-    top: 10px;
-    left: 1223px;
-    width: 40px;
-    height: 40px;
+    //top: 10px;
+    //width: auto;
+    //height: auto;
     border: 1px solid var(--unnamed-color-ffffff);
     border: 1px solid #FFFFFF;
+    border-radius: 50px;
     opacity: 1;
 }
 
-#acceil
-{
-    top: 88px;
-    left: 784px;
-    width: 50px;
-    height: 26px;
-    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-16)/var(--unnamed-line-spacing-26) var(--unnamed-font-family-hind-siliguri);
-    letter-spacing: var(--unnamed-character-spacing-0);
-    text-align: left;
-    font: normal normal normal 16px/26px Hind Siliguri;
-    letter-spacing: 0px;
-    color: #30C4CA;
-    opacity: 1;
-}
 
-#produit_Services
-{
-    top: 88px;
-    left: 854px;
-    width: 132px;
-    height: 26px;
-    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-16)/var(--unnamed-line-spacing-26) var(--unnamed-font-family-hind-siliguri);
-    letter-spacing: var(--unnamed-character-spacing-0);
-    color: var(--unnamed-color-253d8a);
-    text-align: left;
-    font: normal normal normal 16px/26px Hind Siliguri;
-    letter-spacing: 0px;
-    color: #253D8A;
-    opacity: 1;
-}
 
 #prisma
 {
@@ -105,18 +73,21 @@ a:hover
     background-color: #30C4CA;
 }
 
-#title
+.rounded-pill
 {
-    top: 275px;
-    left: 81px;
-    width: 420px;
-    height: 106px;
-    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) 30px/48px var(--unnamed-font-family-hind-siliguri);
+    background-color: #30C4CA;
+    color: white;
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) 15px/25px var(--unnamed-font-family-hind-siliguri);
     letter-spacing: var(--unnamed-character-spacing-0);
-    color: var(--unnamed-color-253d8a);
-    text-align: left;
-    font: normal normal bold 30px/48px Hind Siliguri;
-    letter-spacing: 0px;
-    color: #253D8A;
-    opacity: 1;
+    height: 50px;
+}
+
+#ref1
+{
+    width: 136px;
+}
+
+#ref2
+{
+    width: 236px;
 }
