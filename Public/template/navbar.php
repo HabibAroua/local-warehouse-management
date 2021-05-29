@@ -15,7 +15,7 @@
 		{
 			$id = $v{'id'};
 			$label = $v{'label'};
-			$Categories = $Categories."<a class='dropdown-item' href='productByCategory.php' href='#'>$label</a>"; 
+			$Categories = $Categories."<a class='dropdown-item' href='productByCategory.php?id=$id&category=$label' href='#'>$label</a>"; 
 		}
         switch($page)
         {
