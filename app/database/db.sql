@@ -62,3 +62,11 @@ MODIFY photo text;
 
 ALTER TABLE Product
 MODIFY photo longtext;
+
+Create table Contact
+(
+	id int PRIMARY KEY AUTO_INCREMENT,
+    name varchar(50),
+    email varchar(70),
+    message text
+);

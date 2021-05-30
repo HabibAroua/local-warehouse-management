@@ -49,9 +49,10 @@
                     'name' => $this->name,
                     'email' => $this->email,
                     'message' => $this->message,
+                    'date_message' => date("Y/m/d"),
                 ];
-                $sql = "INSERT INTO Contact (name, email, message)
-                        VALUES (:name, :email, :message)";
+                $sql = "INSERT INTO Contact (name, email, message, date_message)
+                        VALUES (:name, :email, :message, :date_message)";
                 $stmt= $connection->con->prepare($sql);
                 return $stmt->execute($data);
             }
