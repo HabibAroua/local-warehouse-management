@@ -68,5 +68,6 @@ Create table Contact
 	id int PRIMARY KEY AUTO_INCREMENT,
     name varchar(50),
     email varchar(70),
-    message text
+    message text,
+    date_message date
 );
