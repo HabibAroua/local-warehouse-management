@@ -4,6 +4,7 @@
     function activePage($page)
     {
         $Home = "";
+		$Profile = "";
         $About = "";
         $Services = "";
         $Contact = "";
@@ -21,6 +22,8 @@
         {
             case 'Home' : $Home = 'active';
 			break;
+			case 'Profile' :$Profile = 'active';
+				break;
 			case 'About' : $About = 'active';
 			break;
 			case 'Services' : $Services = 'active';
@@ -59,7 +62,7 @@
 								$Categories
 							</div>
 						</li>
-						<li class='nav-item $Services'>
+						<li class='nav-item $Profile'>
 							<a class='nav-link' href='profile.php'>
 								Profile
 							</a>
