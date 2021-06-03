@@ -44,7 +44,7 @@
                                             echo "<td> $Label </td> ";
                                             echo "<td>  $number </td> ";
                                             echo "<td> $price </td> ";
-                                            echo "<td><img style='width:100px; height:80px;' src='$photo'  /></td> ";
+                                            echo "<td><img onclick='updateImage($id);' style='width:100px; height:80px;' src='$photo'  /></td> ";
                                             echo "<td>$idCat </td> ";
                                             echo "<td> $login </td> ";
                                             echo "<td> $idProvider </td> ";
@@ -124,5 +124,10 @@
     function update(id)
     {
         location.href = "Product_Management.php?page=update&id="+id;
+    }
+    
+    function updateImage(id)
+    {
+        location.href = "Product_Management.php?page=updateImage&id="+id;
     }
 </script>

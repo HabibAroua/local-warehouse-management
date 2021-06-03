@@ -198,7 +198,7 @@
             }
         }
         
-        public function update()
+        public function update($id)
         {
             try
             {
@@ -211,7 +211,6 @@
                     'number' => $this->number,
                     'price' => $this->price,
                     'idCat' => $this->idCat,
-                    'login'=>$this->login,
                     'idProvider'=>$this->idProvider,
                 ];
                 $sql = "UPDATE Product SET 
@@ -220,8 +219,30 @@
                             number=:number,
                             price=:price,
                             idCat=:idCat,
-                            login=:login,
                             idProvider=:idProvider
+                        WHERE id=:id";
+                $stmt= $connection->con->prepare($sql);
+                return $stmt->execute($data);
+            }
+            catch(Exception $e)
+            {
+                echo "Error : ".$e;
+                return 0;
+            }
+        }
+        
+        public function updateImage($id)
+        {
+            try
+            {
+                global $connection;
+                $data =
+                [
+                    'id'=>$id,
+                    'photo' => $this->photo,
+                ];
+                $sql = "UPDATE Product SET
+                            photo= :photo
                         WHERE id=:id";
                 $stmt= $connection->con->prepare($sql);
                 return $stmt->execute($data);
