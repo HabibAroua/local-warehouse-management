@@ -12,7 +12,7 @@
 		<div class="container py-5">
 			<!-- For Demo Purpose-->
 			<header class="text-center mb-5">
-				<h1 class="display-4 font-weight-bold">List product of<?php echo $cat; ?></h1>
+				<h1 class="display-4 font-weight-bold">List product of <?php echo $cat; ?></h1>
 			</header> <!-- pagination justify-content-center -->
 			<?php
 				$s="";
