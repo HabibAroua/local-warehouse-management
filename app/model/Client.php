@@ -229,6 +229,23 @@
             }
         }
         
+        public function nbClient()
+        {
+            try
+            {
+                $nb = 0;
+                foreach($this->getAll() as $v)
+                {
+                    $nb++;
+                }
+                return $nb;
+            }
+            catch(Exception $e)
+            {
+                return 0;
+            }
+        }
+        
         //toString method
         public function toString()
         {

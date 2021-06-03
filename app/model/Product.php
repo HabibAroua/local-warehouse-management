@@ -341,6 +341,24 @@
                 return null;
             }
         }
+        
+        public function nbProduct()
+        {
+            try
+            {
+                $nb = 0;
+                foreach($this->getAll() as $v)
+                {
+                    $nb++;
+                }
+                return $nb;
+            }
+            catch(Exception $e)
+            {
+                echo "Error : ".$e;
+                return 0;
+            }
+        }
     
         //toString() method
         public function toString()
