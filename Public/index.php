@@ -14,8 +14,7 @@
 			<header class="text-center mb-5">
 				<h1 class="display-4 font-weight-bold">Welcome To Our Shop</h1>
 				<p class="font-italic text-muted mb-0">In our shop we have products with extraordinary quality</p>
-				<p class="font-italic text-muted">Snippet By <a href="https://bootstrapious.com" class="text-muted">
-				    <u>Bootstrapious</u></a>
+				    <u>Echry.com</u></a>
 				</p>
 			</header>
 			<!-- added by Habib -->
