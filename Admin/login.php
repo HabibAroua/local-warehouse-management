@@ -59,6 +59,9 @@
                 <div class="text-center mt-4 font-weight-light">
                   Don't have an account? <a href="register.php" class="text-primary">Create</a>
                 </div>
+								<div class="text-center mt-4 font-weight-light">
+                  <a href="../Public/" class="text-primary">Public</a>
+                </div>
               </form>
             </div>
           </div>
