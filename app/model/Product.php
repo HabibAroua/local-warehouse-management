@@ -397,7 +397,17 @@
         //toString() method
         public function toString()
         {
-            return "[]";
+            return "[
+                        'id'=>'".$this->id."',
+                        'label'=>'".$this->label."',
+                        'number'=>'".$this->number."',
+                        'price' => '".$this->price."',
+                        'description' => '".$this->description."',
+                        'photo' => '".$this->photo."',
+                        'idCat' => '".$this->idCat."',
+                        'login' => '".$this->login."',
+                        'idProvider' =>'".$this->idProvider."'
+                    ]";
         }
     }
 ?>
