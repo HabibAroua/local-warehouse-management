@@ -22,7 +22,7 @@
 					<div class="row">
 						<div class="col-6">
 							<h3 class="mb-3">
-								Our product
+								Our products
 							</h3>
 						</div>
 						<div class="col-6 text-right">

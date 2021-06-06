@@ -1,7 +1,7 @@
 <?php
 	require_once('../app/connection/Connection.php');
-	require_once('../app/model/Category.php');
 	require_once('../app/model/Product.php');
+	require_once('../app/model/Category.php');
 	require_once('../app/model/Provider.php');
 	require_once('../app/model/Client.php');
 ?>
