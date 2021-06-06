@@ -50,7 +50,7 @@
 							</a>
 						</li>
 						<li class='nav-item $About'>
-							<a class='nav-link' href='#'>
+							<a class='nav-link' href='about.php'>
 								About
 							</a>
 						</li>
