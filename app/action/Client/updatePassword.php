@@ -4,7 +4,7 @@
     session_start ();
     if(($_POST['old_password']) && ($_POST['new_password']))
     {
-        if(sha1($_SESSION['password']) == sha1($_POST['old_password']))
+        if(($_SESSION['password']) == sha1($_POST['old_password']))
         {
             $client = new Client();
             $client->setPassword(sha1($_POST['new_password']));
