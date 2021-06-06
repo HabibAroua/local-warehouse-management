@@ -359,6 +359,40 @@
                 return 0;
             }
         }
+        
+        public function searchProductByAlphabet($alphabet)
+        {
+            try
+            {
+                global $connection ;
+                $T=array();
+                $res=$connection -> con->query("SELECT * FROM Product WHERE label LIKE '$alphabet%'");
+                $i=0;
+                while($tab=$res -> fetch(PDO::FETCH_NUM))
+                {
+                    $T[$i]=$Array=array
+                    (
+                        'id'=>$tab[0],
+                        'label'=>$tab[1],
+                        'number'=>$tab[2] ,
+                        'price' => $tab[3],
+                        'description' => $tab[4],
+                        'photo' => $tab[5],
+                        'idCat' => $tab[6],
+                        'login' => $tab[7],
+                        'idProvider' =>$tab[8]
+                    );
+                    $i++;
+                }
+                return $T;
+            }
+            catch(Exception $e)
+            {
+                echo "Error : ".$e;
+                return null;
+            }
+
+        }
     
         //toString() method
         public function toString()
